@@ -1,0 +1,290 @@
+.cbp-so-scroller {
+	overflow: hidden;
+	background-color: white;
+	display: block;
+}
+
+
+
+.cbp-so-section {
+	width:100%;
+	margin:auto;
+	/*margin-bottom: 5em;*/
+	align-items: center;
+	justify-content: center;
+}
+
+
+/* Clear floats of children */
+.cbp-so-section:before,
+.cbp-so-section:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-so-section:after {
+	clear: both;
+}
+
+
+/* Text styling */
+.cbp-so-section h2 {
+	font-size: 3em;
+	line-height: 1;
+
+}
+
+
+.cbp-so-section p {
+	font-size: 1.2rem;
+	font-weight: 300;
+	text-align: left;
+	width: 80%;
+	color :#747474;
+
+
+
+}
+/* Font style articles*/
+
+#bold_article{
+	color: black;
+	font-weight: bold;
+}
+
+
+.text_article {
+	color: black;
+}
+#taille_articles{
+	height:90vh;
+}
+
+/* Sides */
+.cbp-so-side {
+	width: 50%;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	/*min-height: 22em;*/
+	max-height: 50vh;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+	justify-content: center;
+
+}
+
+/* Clear floats of children */
+.cbp-so-side:before,
+.cbp-so-side:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-so-side:after {
+	clear: both;
+}
+
+.cbp-so-side-right {
+	text-align: left;
+	justify-content: center;
+
+}
+
+.cbp-so-side-left {
+	text-align: left;
+	justify-content: center;
+
+}
+.cbp-so-section article {
+
+	padding: 5em;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+}
+
+#right {
+align-items: flex-start;
+}
+
+
+#left1 {
+ background-color: #000000;
+
+}
+#left2 {
+ background-color: #ffffff;
+
+}
+#right1 {
+ background-color: #000000;
+
+}
+#right2 {
+ background-color: #e57627;
+
+}
+#right3 {
+max height:none;
+}
+
+#img_right {
+	height: 100%;
+}
+
+
+.cbp-so-side-right img {
+	float: center;
+	height: 100%;
+	background-color: inherit;
+
+}
+.cbp-so-side-right a {
+	float: left;
+	height: 100%;
+	background-color: inherit;
+}
+
+.cbp-so-side-left a {
+	float: left;
+	height: 100%;
+	background-color: inherit;
+}
+
+.cbp-so-side-left img {
+	float: right;
+}
+
+/* Initial state (hidden or anything else) */
+.cbp-so-init .cbp-so-side {
+	opacity: 0;
+}
+
+.cbp-so-init .cbp-so-side-left {
+	-webkit-transform: translateX(-80px);
+	-moz-transform: translateX(-80px);
+	transform: translateX(-80px);
+}
+
+.cbp-so-init .cbp-so-side-right {
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);
+}
+
+/* Animated state */
+/* add you final states (transition) or your effects (animations) for each side */
+.cbp-so-section.cbp-so-animate .cbp-so-side-left,
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+
+/* For example, add a delay for the right side:
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+*/
+
+/* Example media queries */
+
+@media screen and (max-width: 73.5em) {
+	.cbp-so-scroller {
+		font-size: 65%;
+
+	}
+
+	.cbp-so-side {
+	max-height: 80vh;
+}
+
+	.cbp-so-side img {
+		max-width: 120%;
+	}
+
+	.cbp-so-section {
+		width:100%;
+		margin-bottom: 0
+	}
+
+	.cbp-so-section h2 {
+		margin-top:2rem;
+		font-size: 3rem;
+	}
+
+
+	.cbp-so-section p {
+		font-size: 1.2rem;
+		font-weight: 300;
+		text-align: left;
+		width: 90%;
+	}
+	.cbp-so-section article {
+	max-height: none;
+	padding: 2rem;
+	}
+}
+
+@media screen and (max-width: 41.125em) {
+	.cbp-so-side {
+		float: none;
+		width: 100%;
+		max-height: 80vh;
+
+	}
+	.cbp-so-section {
+		width:100%;
+		margin-bottom: 0;
+	}
+	.cbp-so-section h2 {
+		margin-top:2rem;
+		font-size: 3rem;
+	}
+
+	.cbp-so-side img {
+		max-width: 100%;
+	}
+	.cbp-so-section p {
+		font-size: 1.2rem;
+		font-weight: 300;
+		text-align: left;
+		width: 90%;
+	}
+	.cbp-so-section article {
+	max-height: none;
+
+	}
+
+	#left {
+		background-color: #8c9194;
+		width:100%;
+		padding: 3.5rem;
+		display : none;
+	}
+
+		#left h2, #left h3 {
+	 color: #ffffff;
+		}
+
+		#left p {
+	 color: #ffffff;
+}
+
+ #left span {
+	 color: black;
+ }
+
+#right {
+	width:100%;
+	padding: 3.5rem;
+	display: none;
+}
