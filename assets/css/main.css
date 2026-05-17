@@ -4132,7 +4132,7 @@ input, select, textarea {
 				-webkit-flex-wrap: wrap;
 				-ms-flex-wrap: wrap;
 				flex-wrap: wrap;
-				align-items: center;
+				align-items: top;
 				justify-content: space-between;
 				width: 70%;
 				margin : auto;
