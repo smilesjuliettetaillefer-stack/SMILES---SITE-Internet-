@@ -4198,10 +4198,11 @@ input, select, textarea {
 			}
 
 			.intertitre {
-			font-size: 1.2rem;
+			font-size: 1.4rem;
 			margin: 2rem 0 1rem 0;
 			color: #a569a8;
 			font-style: italic;
+			font-weight: bold;
 			}
 
 			#intertitre_seul {
